@@ -1,14 +1,14 @@
-==Hover Drive==
+# Hover Drive
 A quick and dirty example "game" created for the November 2014 TasLUG (Tasmanian Linux User Group) talk on creating a simple game from scratch using SDL2 and OpenGL.
 
 Copyight Josh "Cheeseness" Bush 2014
 
 
-===Instructions===
+## Instructions
 Use mouse movement to control the first person camera and WASD or cursor keys to steer and accelerate the hovercraft.
 
 
-===Building===
+## Building
 Linker requirements/dependencies
 * GLU
 * GLEW
@@ -20,7 +20,7 @@ Linker requirements/dependencies
 Windows builds have been tested via MinGW, and platform specific ifdefs are present for that compiler. If you want to try building for Windows with another compiler, you'll need to adjust those.
 
 
-===Third Part Assets===
+## Licences
 Source code, models and presentation licenced under Creative Commons: By Attribution 3.0
 http://creativecommons.org/licenses/by/3.0/
 
