@@ -3,7 +3,7 @@
 * (Tasmanian Linux User Group) talk on creating a simple game from scratch
 * using SDL2 and OpenGL.
 * 
-* Copyight Josh "Cheeseness" Bush 2014
+* Copyright Josh "Cheeseness" Bush 2014
 * 
 * Licenced under Creative Commons: By Attribution 3.0
 * http://creativecommons.org/licenses/by/3.0/
