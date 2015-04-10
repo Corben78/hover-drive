@@ -17,8 +17,12 @@
 	#include <windows.h>
 	#include <fstream>
 #endif
- 
-#include <GL/glew.h>
+
+#ifdef __APPLE__
+    #include <OpenGL/glew.h>
+#else
+    #include <GL/glew.h>
+#endif
 #include <SDL2/SDL.h>
 #include <SDL2/SDL_opengl.h>
 #include <SDL2/SDL_mixer.h>
