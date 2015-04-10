@@ -39,8 +39,8 @@ const string pathSeparator =
 
 
 //The size of the window we're going to generate
-int screenWidth = 1440;
-int screenHeight = 900;
+int screenWidth = 1300;
+int screenHeight = 716;
 
 //Some windowing and OpenGL variables
 SDL_Window* win = NULL;

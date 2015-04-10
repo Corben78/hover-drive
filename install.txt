@@ -1,0 +1,10 @@
+sudo apt-get install glew-utils
+sudo apt-get install libgew1.10 libglew-dev
+sudo apt-get install libglew1.10 libglew-dev
+sudo apt-get install libsdl2 libsdl2-2.0-0 libsdl2-dev
+sudo apt-get install libsdl2-mixer-2.0-0 libsdl2-mixer-dev
+sudo apt-get install libsdl2-ttf-2.0-0 libsdl2-ttf-dev
+
+LANG=en_US g++ -o drive drive.cpp $(sdl2-config --cflags --libs) -lSDL2_ttf -lSDL2_mixer -lGLEW -lGLU -lGL -I/usr/include/GL -I/usr/include
+
+LANG=en_US g++ -o drive drive.cpp -I/usr/include/SDL2 -D_REENTRANT -L/usr/lib/x86_64-linux-gnu -lSDL2 -lSDL2_ttf -lSDL2_mixer -lGLEW -lGLU -lGL -I/usr/include/GL -I/usr/include
