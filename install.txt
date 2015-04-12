@@ -1,3 +1,5 @@
+Linux:
+
 sudo apt-get install glew-utils
 sudo apt-get install libgew1.10 libglew-dev
 sudo apt-get install libglew1.10 libglew-dev
@@ -9,4 +11,9 @@ LANG=en_US g++ -o drive drive.cpp $(sdl2-config --cflags --libs) -lSDL2_ttf -lSD
 
 LANG=en_US g++ -o drive drive.cpp -I/usr/include/SDL2 -D_REENTRANT -L/usr/lib/x86_64-linux-gnu -lSDL2 -lSDL2_ttf -lSDL2_mixer -lGLEW -lGLU -lGL -I/usr/include/GL -I/usr/include
 
-gcc -v ./hover-drive.cpp -Llib/ -lSDL2 -lGLEW -framework -OpenGL -lstdc++ -lDSL2_ttf -lSDL2_mixer -o hover-drive
+OS X (Yosemite):
+
+sudo port install glew
+sudo port install libsdl2 libsd2_mixer libsdl2_ttf
+
+g++ drive.cpp -I/opt/local/include -L/opt/local/lib/ -lSDL2 -lGLEW -lSDL2_ttf -lSDL2_mixer -framework OpenGL -o drive

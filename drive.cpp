@@ -18,11 +18,8 @@
 	#include <fstream>
 #endif
 
-#ifdef __APPLE__
-    #include <OpenGL/glew.h>
-#else
-    #include <GL/glew.h>
-#endif
+
+#include <GL/glew.h>
 #include <SDL2/SDL.h>
 #include <SDL2/SDL_opengl.h>
 #include <SDL2/SDL_mixer.h>
@@ -977,7 +974,7 @@ void loadAssets()
 	sceneryObjects.push_back(loadObj("hill.obj", temp, 0, 0, 0));
 
 	//Make a stack of trees to line the north side of the environment! :D
-	temp = {60,128,60};
+	temp = (SDL_Colour){60,128,60};
 	sceneryObjects.push_back(loadObj("tree.obj", temp, 0, -100.0f, 0));
 	sceneryObjects.push_back(loadObj("tree.obj", temp, -10.0f, -100.0f, 0));
 	sceneryObjects.push_back(loadObj("tree.obj", temp, -20.0f, -100.0f, 0));
@@ -1020,9 +1017,9 @@ void loadAssets()
 	sceneryObjects.push_back(loadObj("tree.obj", temp, 90.0f, 100.0f, 0));
 
 	//Load the components that make up the vehicle
-	temp = {30, 30, 30};
+	temp = (SDL_Colour){30, 30, 30};
 	vehicleObjects.push_back(loadObj("bladder.obj", temp, 0, 0, 0));
-	temp = {255, 255, 0};
+	temp = (SDL_Colour){255, 255, 0};
 	vehicleObjects.push_back(loadObj("chasis.obj", temp, 0, 0, 0));
 	vehicleObjects.push_back(loadObj("fans.obj", temp, 0, 0, 0));
 
